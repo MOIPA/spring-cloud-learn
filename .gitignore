@@ -104,3 +104,29 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+eureka-server/target/generated-sources/
+eureka-server/target/generated-test-sources/
+feign-service/src/main/resources/static/
+feign-service/src/main/resources/templates/
+feign-service/target/generated-sources/
+feign-service/target/generated-test-sources/
+hystrix-dashbord/target/generated-sources/
+hystrix-dashbord/target/generated-test-sources/
+hystrix-service/src/main/resources/static/
+hystrix-service/src/main/resources/templates/
+hystrix-service/target/generated-sources/
+hystrix-service/target/generated-test-sources/
+ribbon-service/target/generated-sources/
+ribbon-service/target/generated-test-sources/
+turbine-service/src/main/resources/static/
+turbine-service/src/main/resources/templates/
+turbine-service/target/generated-sources/
+turbine-service/target/generated-test-sources/
+user-service/src/main/resources/static/
+user-service/src/main/resources/templates/
+user-service/target/generated-sources/
+user-service/target/generated-test-sources/
+zuul-proxy/src/main/resources/static/
+zuul-proxy/src/main/resources/templates/
+zuul-proxy/target/generated-sources/
+zuul-proxy/target/generated-test-sources/
