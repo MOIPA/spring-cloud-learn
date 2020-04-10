@@ -130,3 +130,11 @@ zuul-proxy/src/main/resources/static/
 zuul-proxy/src/main/resources/templates/
 zuul-proxy/target/generated-sources/
 zuul-proxy/target/generated-test-sources/
+config-client/src/main/resources/static/
+config-client/src/main/resources/templates/
+config-client/target/generated-sources/
+config-client/target/generated-test-sources/
+config-security-server/target/generated-sources/
+config-security-server/target/generated-test-sources/
+config-server/target/generated-sources/
+config-server/target/generated-test-sources/
