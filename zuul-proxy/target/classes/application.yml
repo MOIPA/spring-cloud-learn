@@ -1,0 +1,26 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: zuul-proxy
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+zuul:
+  routes: #给服务配置路由
+    user-service:
+      path: /userService/**
+    feign-service:
+      path: /feignService/**
+  prefix: /tr #给网关路由添加前缀 访问要加/tr/....
+  sensitive-headers: Cookie,Set-Cookie,Authorization #配置过滤敏感的请求头信息，设置为空就不会过滤
+  add-host-header: true #设置为true重定向是会添加host请求头  Zuul在请求路由时，不会设置最初的host头信息，这个配置可以解决
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'
