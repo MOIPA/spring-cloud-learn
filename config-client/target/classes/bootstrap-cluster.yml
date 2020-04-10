@@ -1,0 +1,23 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      profile: dev
+      label: master
+      name: config
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'

@@ -1,0 +1,23 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://localhost:8905
+      name: config
+      username: tr
+      password: 123
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'
